@@ -1,0 +1,145 @@
+.lobby-video-container {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.share-scren-section {
+  position: relative;
+  width: calc(100vw - 250px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-screen-item {
+  display: flex;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  border-radius: 10px;
+  max-height: 500px !important;
+}
+.video-screen-item video {
+  object-fit: contain !important;
+}
+
+.share-scren-section button {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: var(--main-bg-cool-rgb);
+  color: var(--text);
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+}
+.wraper-video-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.video-call-section {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  height: calc(100% - 70px);
+  margin: 0 auto;
+  display: flex;
+}
+.video-element-section {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
+.video-element-section-screen-share {
+  width: 100%;
+  height: 100%;
+}
+.grid-of-video {
+  height: 100%;
+  display: inline-flex;
+}
+
+.grid-of-video.screenSharingOn {
+  min-width: 200px;
+  max-width: 200px;
+  height: 100%;
+  position: relative;
+  align-self: flex-end;
+  place-content: start !important;
+}
+.grid-of-video.dualMode .video-item.my_video .display-user-name-when-no-video {
+  background-color: var(--main-bg-cool-rgb);
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+}
+
+.video-item {
+  display: none;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.video-item.active {
+  width: 98%;
+  height: 98%;
+  display: flex;
+}
+.video-item video {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
+  background-color: var(--main-bg-cool-rgb);
+}
+.section-action-room {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  overflow: scroll;
+}
+.tile-ofmeting {
+  position: absolute;
+  left: 20px;
+  color: var(--text);
+}
+
+.section-action-room .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 45px;
+  margin: 0 10px;
+  background-color: var(--main-bg-cool-rgb);
+  color: white;
+  font-size: 20px;
+  border: none;
+
+  cursor: pointer;
+  box-shadow: 0px 0px 5px var(--main-bg-cool-rgb);
+}
+.section-action-room .button.active {
+  background-color: rgba(192, 57, 43, 0.8);
+}
+
+#leaveRoom {
+  padding: 10px;
+  min-width: 60px;
+  border-radius: 30px;
+  height: 40px;
+  background-color: rgba(192, 57, 43, 0.9);
+}
