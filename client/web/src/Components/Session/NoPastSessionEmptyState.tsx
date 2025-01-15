@@ -32,7 +32,7 @@ const NoPastSessionEmptyState = () => {
     <EmptyStateContainer>
       <Message>No Past Session</Message>
       <Description>
-        Update to MEETCODE PRO to save your all your sessions
+        Update to INCODE PRO to save your all your sessions
       </Description>
     </EmptyStateContainer>
   );

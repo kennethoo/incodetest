@@ -7,7 +7,7 @@ import executeEngineManagerv2 from "../engine-application/executeEngineManagerv2
 async function start() {
   const result = await executeEngineManagerv2.execute(
     files,
-    executeEngineManagerv2.JAVASCRIPT
+    executeEngineManagerv2.JAVASCRIPT,
   );
 }
 

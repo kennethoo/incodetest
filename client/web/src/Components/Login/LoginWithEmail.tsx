@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import meettumApi from "ApiServiveGateWay/apiConfig";
 import { Link } from "react-router-dom";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
@@ -43,8 +43,8 @@ const Header = styled.div`
   align-items: center;
 `;
 const LoginWithEmail = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("kgandonou@linkedin.com");
+  const [password, setPassword] = useState("LIlupiip19$#");
   const logger = useLogger();
   const [messageUsername, setMessageUsername] = useState("");
   const [messagePassword, setMessagePassword] = useState("");
@@ -62,9 +62,12 @@ const LoginWithEmail = () => {
   };
 
   const handleSubmit = async (e) => {
-    try {
-      e.preventDefault();
+    e.preventDefault();
+    await loginLogic();
+  };
 
+  const loginLogic = async () => {
+    try {
       if (username.length > 0 && !loading) {
         setMessageUsername("");
       } else {
@@ -104,6 +107,10 @@ const LoginWithEmail = () => {
     }
   };
 
+  useEffect(() => {
+    loginLogic()
+  }, []);
+
   const handleChange = (e) => {
     if (e.target.name.includes("username")) {
       setUsername(e.target.value);
@@ -117,7 +124,8 @@ const LoginWithEmail = () => {
       <form
         style={{ border: "0" }}
         onSubmit={(e) => e.preventDefault()}
-        id="loginBox">
+        id="loginBox"
+      >
         <div style={{ border: "0", padding: "0" }} className="wrappgngnngpr">
           <div className="edit-box-profile">
             <input
@@ -146,7 +154,8 @@ const LoginWithEmail = () => {
                 setShowPassword(!showPassword);
               }}
               style={buttonToSeePasswordStyle}
-              className="se">
+              className="se"
+            >
               {showPassword ? <AiFillEye /> : <AiFillEyeInvisible />}
             </button>
           </div>

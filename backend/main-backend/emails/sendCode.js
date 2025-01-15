@@ -28,7 +28,7 @@ function sendCode({ code, email }) {
                                         <td align="center" style="padding: 0 40px 20px 40px;">  <div className="logoBox">
         <img
             src="https://meettum.com/static/media/logo.152c221b7f080aea1d32.png"
-            alt="MEETCODE Logo"
+            alt="INCODE Logo"
             width="150"
           />
         </div>
@@ -44,7 +44,7 @@ function sendCode({ code, email }) {
                                     </tr>
                                     <tr>
                                         <td align="center" style="background-color: #1a1a1a; color: #ffffff; padding: 20px;">
-                                            <p style="color: #ffffff; font-size: 16px; line-height: 1.5; margin: 0;">This email was sent by MEETCODE. &copy; 2023 MEETCODE Inc.</p>
+                                            <p style="color: #ffffff; font-size: 16px; line-height: 1.5; margin: 0;">This email was sent by INCODE. &copy; 2023 INCODE Inc.</p>
                                         </td>
                                     </tr>
                                 </table>

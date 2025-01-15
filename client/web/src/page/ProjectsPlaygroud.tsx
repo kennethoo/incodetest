@@ -34,7 +34,7 @@ const ProjectsPlaygroud = (): JSX.Element => {
     useState(false);
 
   const codeWorkSessionApiRef = useRef(
-    new CodeWorkSessionApi({ codeWorkSession: {}, isProject: true })
+    new CodeWorkSessionApi({ codeWorkSession: {}, isProject: true }),
   );
 
   const [project, setProject] = useState(null);
@@ -59,7 +59,7 @@ const ProjectsPlaygroud = (): JSX.Element => {
       setProject(project);
       setFiles(project.projectFiles);
       const defaultFile = project.projectFiles.findIndex(
-        (file) => file.isEntryPoint
+        (file) => file.isEntryPoint,
       );
 
       if (tab === undefined) {

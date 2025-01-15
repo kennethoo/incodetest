@@ -151,7 +151,8 @@ const CodeSanBoxV2 = ({
         style={{
           backgroundColor: isLoading ? "transparent" : "",
         }}
-        onClick={handleClick}>
+        onClick={handleClick}
+      >
         {isLoading ? <PlaceHolder /> : <FaPlay />}
       </RunCode>
       <CodeSection>

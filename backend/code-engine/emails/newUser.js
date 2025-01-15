@@ -34,12 +34,12 @@ function sendNewUserEmail({ email, username }) {
       <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#000000" />
-      <meta name="description" content="MEETCODE Create your fitness world." />
+      <meta name="description" content="INCODE Create your fitness world." />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
-      <title>MEETCODE</title>
+      <title>INCODE</title>
     </head>
   
     <style>
@@ -163,16 +163,16 @@ function sendNewUserEmail({ email, username }) {
         <div className="logoBox">
           <img
             src="https://myfitsta.com/static/media/logo.84ddd6d7.png"
-            alt="MEETCODE Logo"
+            alt="INCODE Logo"
             width="150"
           />
         </div>
         <div>
-          <h1>Welcome to <span>MEETCODE</span> 🚀</h1>
+          <h1>Welcome to <span>INCODE</span> 🚀</h1>
         </div>
   
         <p>
-          Hey ${username}, welcome to MEETCODE! We're thrilled to have you join
+          Hey ${username}, welcome to INCODE! We're thrilled to have you join
           our community of fitness enthusiasts. Our platform is changing the game
           by providing tailored fitness programs for anyone to buy and sell.
           Connect with fellow users, explore our range of programs, and start
@@ -191,7 +191,7 @@ function sendNewUserEmail({ email, username }) {
             style="background-color: #1f2125; color: #ffffff; padding: 20px"
           >
             <p style="textfont-size: 16px; line-height: 1; margin: 0">
-              This email was sent by MEETCODE. &copy; 2023 MEETCODE Inc.
+              This email was sent by INCODE. &copy; 2023 INCODE Inc.
             </p>
           </div>
         </tr>

@@ -84,7 +84,7 @@ class MeettumSubscription {
       const last4 = paymentMethodInfo.card.last4;
       await Customer.updateOne(
         { userId: subScriberId, paymentMethods: { $exists: true } },
-        { $set: { "paymentMethods.$[].isDefault": false } }
+        { $set: { "paymentMethods.$[].isDefault": false } },
       );
       await Customer.findOneAndUpdate(
         { userId: subScriberId },
@@ -97,7 +97,7 @@ class MeettumSubscription {
               brand: brand,
             },
           },
-        }
+        },
       );
       return { succeeded: true };
     } catch (error) {
@@ -239,7 +239,7 @@ class MeettumSubscription {
           subScriberId: userId,
           planId,
         },
-        { status: false }
+        { status: false },
       );
 
       return { succeeded: true };
@@ -290,7 +290,7 @@ class MeettumSubscription {
               ending,
             },
           },
-        }
+        },
       );
 
       if (!result) {
@@ -308,11 +308,11 @@ class MeettumSubscription {
       { userId },
       {
         $set: { "paymentMethods.$[].isDefault": false },
-      }
+      },
     );
     await Customer.updateOne(
       { "paymentMethods.token": token },
-      { $set: { "paymentMethods.$.isDefault": true } }
+      { $set: { "paymentMethods.$.isDefault": true } },
     );
 
     return { succeeded: true };
@@ -356,7 +356,7 @@ class MeettumSubscription {
         receiverUserId: "Meettum",
       });
       userSubscription.nextDateOfPaying = this.getNextPaymentDate(
-        userSubscription.planId
+        userSubscription.planId,
       );
       await userSubscription.save();
 

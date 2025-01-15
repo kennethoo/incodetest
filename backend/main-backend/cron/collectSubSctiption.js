@@ -30,19 +30,19 @@ async function collectSubscription() {
         if (subscription.status === true) {
           const transactionResult =
             await meetumCodeSubscriptionApi.chargeUserForMeettumSubScription(
-              subscription
+              subscription,
             );
 
           if (!transactionResult.succeeded) {
             //email ther user lol
 
             await meetumCodeSubscriptionApi.removeUserSubScrioption(
-              subscription._doc
+              subscription._doc,
             );
           }
         } else {
           await meetumCodeSubscriptionApi.removeUserSubScrioption(
-            subscription._doc
+            subscription._doc,
           );
         }
       }

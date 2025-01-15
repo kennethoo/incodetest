@@ -23,18 +23,18 @@ async function collectSubscription() {
         if (subscription.status === true) {
           const transactionResult =
             await meettumSubscriptionApi.chargeUserForMeettumSubScription(
-              subscription
+              subscription,
             );
           if (!transactionResult.succeeded) {
             //email ther user lol
 
             await meettumSubscriptionApi.removeUserSubScrioption(
-              subscription._doc
+              subscription._doc,
             );
           }
         } else {
           await meettumSubscriptionApi.removeUserSubScrioption(
-            subscription._doc
+            subscription._doc,
           );
         }
       }

@@ -54,7 +54,7 @@ function JoinProToContinue() {
 
   return (
     <Container>
-      <Header>Try MEETCODE Pro to continue</Header>
+      <Header>Try INCODE Pro to continue</Header>
 
       <Button
         onClick={() => {

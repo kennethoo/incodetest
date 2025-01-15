@@ -29,7 +29,7 @@ router.post("/api/v1/change-password", (req, res) => {
               bcrypt.hash(req.body.newPassword, 10, (error, hash) => {
                 User.findOneAndUpdate(
                   { username: req.body.username },
-                  { password: hash }
+                  { password: hash },
                 ).then((result) => {
                   res.send(JSON.stringify("succeeded"));
                 });
@@ -37,7 +37,7 @@ router.post("/api/v1/change-password", (req, res) => {
             } else {
               res.send(JSON.stringify("Your password is incorect"));
             }
-          }
+          },
         );
       } else {
         res.send(JSON.stringify("This username do not exist"));
@@ -52,7 +52,7 @@ router.post("/api/v1/update-password", (req, res) => {
       bcrypt.hash(req.body.newPassword, 10, (error, hash) => {
         User.findOneAndUpdate(
           { email: req.body.email },
-          { password: hash }
+          { password: hash },
         ).then((result) => {
           res.send({ succeeded: true });
         });
@@ -206,7 +206,7 @@ router.get("/api/sessions", (req, res) => {
     Session.find({ "session.user.userId": req.session.user?.userId }).then(
       (result) => {
         res.send(result);
-      }
+      },
     );
   } else {
     res.send({ succeeded: false });

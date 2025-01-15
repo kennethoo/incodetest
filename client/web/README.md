@@ -1,4 +1,4 @@
-MEETCODE is a platform that simplifies meetin , and clients management. With MEETCODE you can
+INCODE is a platform that simplifies meetin , and clients management. With INCODE you can
 
 - Create ,Schedule , Join , Mannage Meeting
 - Create Daily Task

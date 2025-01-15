@@ -35,7 +35,7 @@ app.use(
       sameSite: true,
       maxAge: 100000000000000,
     },
-  })
+  }),
 );
 
 app.use(cors());

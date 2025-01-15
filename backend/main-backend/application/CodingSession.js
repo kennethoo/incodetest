@@ -60,7 +60,7 @@ class CodingSessionApi {
             userId: creatorId,
             productType: productAccessManagerApi.PRODUCT_SESSION,
           },
-        }
+        },
       );
 
       if (!canAccess) {
@@ -125,7 +125,7 @@ class CodingSessionApi {
         },
         lastModified: moment.utc().format(),
       },
-      { new: true }
+      { new: true },
     );
 
     return {
@@ -163,7 +163,7 @@ class CodingSessionApi {
           lastModified: moment.utc().format(),
         },
       },
-      { new: true }
+      { new: true },
     );
     return result;
   };
@@ -178,7 +178,7 @@ class CodingSessionApi {
         },
         lastModified: moment.utc().format(),
       },
-      { new: true }
+      { new: true },
     );
     return { succeeded: true, files: result.files };
   };
@@ -187,7 +187,7 @@ class CodingSessionApi {
     const { sessionId, title } = payload;
     await CodingSession.findOneAndUpdate(
       { _id: sessionId },
-      { title, lastModified: moment.utc().format() }
+      { title, lastModified: moment.utc().format() },
     );
     return { succeeded: true };
   };

@@ -45,7 +45,7 @@ const ContainerIcon = styled.div`
 function FeatureOfMeetumPro({ setSeletedStep }) {
   return (
     <Container>
-      <Header style={{ fontSize: "25px" }}> MEETCODE PRO</Header>
+      <Header style={{ fontSize: "25px" }}> INCODE PRO</Header>
       <ContainerOption>
         <ContainerIcon>
           <FaCheckCircle />
@@ -74,7 +74,7 @@ function FeatureOfMeetumPro({ setSeletedStep }) {
         <ContainerIcon>
           <FaCheckCircle />
         </ContainerIcon>
-        <Title>Early Access to MEETCODE API + Credits</Title>
+        <Title>Early Access to INCODE API + Credits</Title>
       </ContainerOption>
 
       <ContainerOption>

@@ -210,7 +210,8 @@ const GuestCodeSanBox = ({
           style={{
             backgroundColor: isLoading ? "transparent" : "",
           }}
-          onClick={handleClick}>
+          onClick={handleClick}
+        >
           {isLoading ? <PlaceHolder /> : "Run"}
         </RunCode>
       </CodoToolBar>

@@ -16,6 +16,6 @@ const meetingRoomSession = new Schema({
 });
 const MeetingRoomSession = mongoose.model(
   "meetingroomsession",
-  meetingRoomSession
+  meetingRoomSession,
 );
 module.exports = MeetingRoomSession;

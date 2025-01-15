@@ -164,7 +164,8 @@ const SelectableTabs = ({
           <CloseSection
             onClick={() => {
               setOuputSectionOpen(false);
-            }}>
+            }}
+          >
             <IoCloseSharp />
           </CloseSection>
           {labels.map((label, index) => (
@@ -175,7 +176,8 @@ const SelectableTabs = ({
               isactive={activeTabIndex === index}
               className={activeTabIndex === index ? "activeTabIndex" : ""}
               key={label.name}
-              onClick={() => openTab(index)}>
+              onClick={() => openTab(index)}
+            >
               {label.name}
               {label.badge ? ` ( ${label.badge} )` : ""}
             </Label>
@@ -186,7 +188,8 @@ const SelectableTabs = ({
       <TabSectionWrapper
         style={{
           height: showNavigation ? "calc(100% - 50px" : "100%",
-        }}>
+        }}
+      >
         {sectionToShow.map((section, index) => {
           return (
             <Tab isactive={activeTabIndex === index} key={section.label}>

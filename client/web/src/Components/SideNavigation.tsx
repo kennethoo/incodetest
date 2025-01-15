@@ -59,22 +59,6 @@ function SideNavigation() {
             <Label>Home</Label>
           </ContainerNativation>
         </NavLink>
-        <NavLink to="/app/analytic" className="nacgg" id="nav-lii">
-          <ContainerNativation>
-            <Icon className="wrapper-nav">
-              <IoAnalyticsSharp />
-            </Icon>
-            <Label>Analytics</Label>
-          </ContainerNativation>
-        </NavLink>
-        <NavLink to="/app/repo" className="nacgg" id="nav-lii">
-          <ContainerNativation>
-            <Icon className="wrapper-nav">
-              <FaRegLightbulb />
-            </Icon>
-            <Label>Repo</Label>
-          </ContainerNativation>
-        </NavLink>
 
         <NavLink to="/app/projects" className="nacgg" id="nav-lii">
           <ContainerNativation>
@@ -84,14 +68,7 @@ function SideNavigation() {
             <Label>Projects</Label>
           </ContainerNativation>
         </NavLink>
-        <NavLink to="/app/apikeys" className="nacgg" id="nav-lii">
-          {/* <ContainerNativation>
-            <Icon className="wrapper-nav">
-              <TbApi />
-            </Icon>
-            <Label>Api Keys</Label>
-          </ContainerNativation> */}
-        </NavLink>
+        <NavLink to="/app/apikeys" className="nacgg" id="nav-lii"></NavLink>
         <NavLink to="/app/session" className="nacgg" id="nav-lii">
           <ContainerNativation>
             <Icon className="wrapper-nav">
@@ -109,7 +86,6 @@ function SideNavigation() {
           </ContainerNativation>
         </NavLink>
       </div>
-      {!user.isProUser && <UpgrateMeettumProCTA />}
     </Container>
   );
 }

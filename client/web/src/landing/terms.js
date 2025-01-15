@@ -62,8 +62,8 @@ export function TermsWraper() {
           <p>
             <strong>Company</strong> (referred to as either &quot;the
             Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in
-            this Agreement) refers to MEETCODE LLC, 325 Chestnut St,
-            Philadelphia, PA 19106.
+            this Agreement) refers to INCODE LLC, 325 Chestnut St, Philadelphia,
+            PA 19106.
           </p>
         </li>
         <li>
@@ -103,7 +103,7 @@ export function TermsWraper() {
         </li>
         <li>
           <p>
-            <strong>Website</strong> refers to MEETCODE, accessible from{" "}
+            <strong>Website</strong> refers to INCODE, accessible from{" "}
             <a
               href="https://meettum.com/"
               target="_blank"

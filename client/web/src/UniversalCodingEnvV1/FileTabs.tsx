@@ -136,7 +136,8 @@ const FileTabs = ({
               color={attribute.text}
               isactive={activeTabIndex === index}
               className={activeTabIndex === index ? "activeTabIndex" : ""}
-              onClick={() => openTab(index)}>
+              onClick={() => openTab(index)}
+            >
               {label.name}
             </Label>
           ))}
@@ -146,7 +147,8 @@ const FileTabs = ({
       <TabSectionWrapper
         style={{
           height: showNavigation ? "calc(100% - 40px" : "100%",
-        }}>
+        }}
+      >
         {sectionToShow.map((section, index) => {
           if (index === activeTabIndex) {
             return (

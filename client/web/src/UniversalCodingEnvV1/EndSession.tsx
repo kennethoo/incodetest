@@ -33,7 +33,8 @@ function EndSession({ session, setIsEndSessionModal }) {
             onClick={() => {
               setIsEndSessionModal(false);
             }}
-            className="close-that">
+            className="close-that"
+          >
             <IoCloseSharp />
           </button>
           <p>End Session</p>
@@ -47,7 +48,8 @@ function EndSession({ session, setIsEndSessionModal }) {
           <button
             onClick={deleteAccount}
             style={{ backgroundColor: "red" }}
-            className={`next agreen   ${isLoading ? "loading" : ""}  `}>
+            className={`next agreen   ${isLoading ? "loading" : ""}  `}
+          >
             YES END
           </button>
         ) : (

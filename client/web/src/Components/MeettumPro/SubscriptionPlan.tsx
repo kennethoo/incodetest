@@ -126,7 +126,8 @@ function SubscriptionPlan({ item, setSeletedStep, setSelectedPlanId }) {
                 fontSize: "15px",
                 marginLeft: "5px",
                 marginRight: "5px",
-              }}>
+              }}
+            >
               /
             </Text>
             <Text style={{ color: "#dadada", fontSize: "15px" }}>{name}</Text>
@@ -137,7 +138,8 @@ function SubscriptionPlan({ item, setSeletedStep, setSelectedPlanId }) {
         onClick={() => {
           setSelectedPlanId(planId);
           setSeletedStep("step_three");
-        }}>
+        }}
+      >
         Select
       </Button>
     </CardContainer>

@@ -70,7 +70,7 @@ class ProjectApi {
     const { projectId, title } = payload;
     await Project.findOneAndUpdate(
       { _id: projectId },
-      { title, lastModified: moment.utc().format() }
+      { title, lastModified: moment.utc().format() },
     );
     return { succeeded: true };
   };
@@ -78,7 +78,7 @@ class ProjectApi {
     const { projectId, isPublic } = payload;
     await Project.findOneAndUpdate(
       { _id: projectId },
-      { isPublic, lastModified: moment.utc().format() }
+      { isPublic, lastModified: moment.utc().format() },
     );
     return { succeeded: true };
   };
@@ -86,7 +86,7 @@ class ProjectApi {
     const { projectId, filename } = payload;
     const project = await Project.findById(projectId);
     const fileExists = project.projectFiles.some(
-      (file) => file.filename === filename
+      (file) => file.filename === filename,
     );
 
     if (fileExists) {
@@ -107,7 +107,7 @@ class ProjectApi {
         },
         lastModified: moment.utc().format(),
       },
-      { new: true }
+      { new: true },
     );
 
     return {
@@ -126,7 +126,7 @@ class ProjectApi {
           lastModified: moment.utc().format(),
         },
       },
-      { new: true }
+      { new: true },
     );
     return result;
   };
@@ -141,7 +141,7 @@ class ProjectApi {
         },
         lastModified: moment.utc().format(),
       },
-      { new: true }
+      { new: true },
     );
     return result;
   };

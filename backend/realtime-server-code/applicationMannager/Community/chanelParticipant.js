@@ -9,7 +9,7 @@ const channelsParticipant = new Schema({
 
 const ChannelParticipant = mongoose.model(
   "channelsParticipant",
-  channelsParticipant
+  channelsParticipant,
 );
 class ChannelMannager {
   constructor() {}

@@ -1,5 +1,5 @@
-Ok firs we need to connect to the instance 
-Run the following script 
+Ok firs we need to connect to the instance
+Run the following script
 
 ssh -i "kenneth-in-cali.pem" ubuntu@ec2-18-117-131-228.us-east-2.compute.amazonaws.com
 
@@ -13,7 +13,7 @@ sudo apt upgrade
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-Install Dockcer 
+Install Dockcer
 To install Docker on your Ubuntu EC2 instance, you can follow these steps:
 
 Update the Package Index:
@@ -28,10 +28,10 @@ Install packages that allow apt to use a repository over HTTPS.
 bash
 Copy code
 sudo apt-get install \
-  apt-transport-https \
-  ca-certificates \
-  curl \
-  software-properties-common
+ apt-transport-https \
+ ca-certificates \
+ curl \
+ software-properties-common
 Add Docker's Official GPG Key:
 Add Docker’s official GPG key to verify the integrity of the packages.
 
@@ -44,9 +44,9 @@ Set up the Docker stable repository.
 bash
 Copy code
 sudo add-apt-repository \
-  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) \
-  stable"
+ "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+ $(lsb_release -cs) \
+ stable"
 Update the Package Index Again:
 Update the apt package index again to include the newly added Docker repository.
 
@@ -77,15 +77,11 @@ After executing this command, you'll need to log out and log back in for the cha
 
 Now, Docker should be installed and ready to use on your Ubuntu EC2 instance.
 
-
-
 Send the folder
-
 
 rsync -avz --exclude 'node_modules' --exclude '.git' --exclude '.env' \
 -e "ssh -i ~/.ssh/kenneth-in-cali.pem" \
 . ubuntu@ec2-18-117-131-228.us-east-2.compute.amazonaws.com:~/app
-
 
 to restart the service
 sudo systemctl daemon-reload
@@ -95,24 +91,17 @@ sudo systemctl restart myapp.service
 
 https://www.sammeechward.com/deploying-full-stack-js-to-aws-ec2#systemd
 
-
-
-
-MEETCODE RCE is a sever that allow user to run  code only via API the concep is prettu simple.
+INCODE RCE is a sever that allow user to run code only via API the concep is prettu simple.
 
 - User can create an account on the platform ( i will clone meettum code for that )
-- user then create "generate an APi key 
+- user then create "generate an APi key
 - USer "load they account with money 1-->100Request( let's keep it simple for now)
-- we will supoort only 3 language for now then make sure 
-- they will make a requet with they key , the language , and the code 
-and we return the solution .
+- we will supoort only 3 language for now then make sure
+- they will make a requet with they key , the language , and the code
+  and we return the solution .
 
+step the create this
 
-step the create this 
-- Create a class that can generate keys for a user 
-- create  a wallet class where user can "load money into they account"
-- create a class that given a key it check it the user can execute code then then we charge you for everyh "suceful execution" the when  succeful we dedtett with your account . and crete the awnser 
-
-
-
-
+- Create a class that can generate keys for a user
+- create a wallet class where user can "load money into they account"
+- create a class that given a key it check it the user can execute code then then we charge you for everyh "suceful execution" the when succeful we dedtett with your account . and crete the awnser

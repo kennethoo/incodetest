@@ -30,10 +30,10 @@ function Logger() {
     };
   });
   const isErrorMessage = useSelector(
-    (state: { isErrorMessage: boolean }) => state.isErrorMessage
+    (state: { isErrorMessage: boolean }) => state.isErrorMessage,
   );
   const message = useSelector(
-    (state: { messageToLog: string }) => state.messageToLog
+    (state: { messageToLog: string }) => state.messageToLog,
   );
   const classNameMessage = isErrorMessage
     ? "error-message"
@@ -51,7 +51,8 @@ function Logger() {
           mass: 1,
           delay: 0.2,
         }}
-        className={`message-to-log ${classNameMessage}`}>
+        className={`message-to-log ${classNameMessage}`}
+      >
         <button onClick={closeLogger} className="close-that">
           <IoCloseSharp />
         </button>

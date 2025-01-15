@@ -85,7 +85,7 @@ const onConnection = (socket) => {
         userId,
         allUserInSessionRoom,
       });
-    }
+    },
   );
 
   joinRoom = async () => {

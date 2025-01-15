@@ -23,10 +23,9 @@ function useCheckLogin() {
       });
       const { isLogIn, user } = data;
       if (isLogIn) {
-        
         realtimeBoardSocket.auth = { userId: user.userId };
         await realtimeBoardSocket.connect();
-          dispatch({
+        dispatch({
           type: "UPDATE_USER",
           value: { ...user, isTempUser: false },
         });
@@ -35,8 +34,6 @@ function useCheckLogin() {
           value: userLoginEnum.login,
         });
         setCurrentStatus(userLoginEnum.login);
-
-
       } else {
         dispatch({ type: "UPDATE_USER", value: { email: "" } });
         dispatch({

@@ -43,7 +43,7 @@ function AppHeader() {
           }}
           className="name-tof-napp"
         >
-          MEETCODE
+          INCODE
         </div>
       </AppName>
 

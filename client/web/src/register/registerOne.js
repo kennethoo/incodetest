@@ -60,7 +60,8 @@ class RegisterOne extends Component {
         <form
           style={{ border: "0" }}
           id="registerbox"
-          onSubmit={this.handleRegister}>
+          onSubmit={this.handleRegister}
+        >
           <Divider>
             <span>OR</span>
           </Divider>
@@ -84,7 +85,8 @@ class RegisterOne extends Component {
             <button
               className={`next agreen   ${
                 this.state.loading ? "loading" : ""
-              }  `}>
+              }  `}
+            >
               {this.state.loading ? <LoadingSpin /> : ""}
             </button>
           )}

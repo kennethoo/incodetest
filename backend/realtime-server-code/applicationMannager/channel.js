@@ -171,7 +171,7 @@ class ChannelApi {
         $pull: {
           participantIds: userId,
         },
-      }
+      },
     );
     return { succeeded: true };
   };

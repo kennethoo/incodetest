@@ -36,11 +36,11 @@ router.post("/api/update-username", async (req, res) => {
     } else {
       await User.findOneAndUpdate(
         { email: req.body.email },
-        { username: req.body.username }
+        { username: req.body.username },
       );
       await UserProfile.findOneAndUpdate(
         { email: req.body.email },
-        { username: req.body.username }
+        { username: req.body.username },
       );
       res.send({ succeeded: true, username: req.body.username });
     }
@@ -61,7 +61,7 @@ router.get(
     } catch (err) {
       return;
     }
-  }
+  },
 );
 
 router.get("/api/icon/:id", (req, res) => {
@@ -157,7 +157,7 @@ router.post("/api/remove-profile", checkSession, (req, res) => {
   UserProfile.findOneAndUpdate(
     { userId: req.body.userId },
     { profile: "" },
-    { new: true }
+    { new: true },
   ).then((result) => {
     res.send(result);
   });
@@ -167,7 +167,7 @@ router.post("/api/remove-banner", (req, res) => {
   UserProfile.findOneAndUpdate(
     { userId: req.body.userId },
     { banner: "" },
-    { new: true }
+    { new: true },
   ).then((result) => {
     res.send(result);
   });
@@ -190,7 +190,7 @@ router.post("/api/profile/image", upload.single("file"), async (req, res) => {
   await UserProfile.findOneAndUpdate(
     { userId: req.body.userId },
     { profile: file },
-    { new: true }
+    { new: true },
   );
   res.send({ succeeded: true, profileUrl: file });
 });
@@ -200,7 +200,7 @@ router.post("/api/profile/remove", checkSession, async (req, res) => {
     await UserProfile.findOneAndUpdate(
       { userId: req.session?.user?.userId },
       { profile: "" },
-      { new: true }
+      { new: true },
     );
     res.send({ succeeded: true });
   } catch (error) {
@@ -210,7 +210,7 @@ router.post("/api/profile/remove", checkSession, async (req, res) => {
 
 router.get("/api/v1/user/subscription", checkSession, async (req, res) => {
   const result = await meetumCodeSubscriptionApi.getUserSuScription(
-    req.session?.user?.userId
+    req.session?.user?.userId,
   );
   res.send(result);
 });
@@ -221,10 +221,10 @@ router.post(
   async (req, res) => {
     const result = await meetumCodeSubscriptionApi.cancelUserSubScrio(
       req.session?.user?.userId,
-      req.body
+      req.body,
     );
     res.send(result);
-  }
+  },
 );
 router.post("/api/update-my-info-for-myprofile", (req, res) => {
   UserProfile.findOne({ userId: req.body.userId })

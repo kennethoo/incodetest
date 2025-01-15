@@ -8,7 +8,7 @@ let comment = new Schema(
     content: String,
     date: String,
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const Comment = mongoose.model("comment", comment);

@@ -10,7 +10,7 @@ function sendMesageToMe(message) {
     html: `<html>
                 <head>
                     <meta charset="UTF-8">
-                    <title>MEETCODE Verification Code</title>
+                    <title>INCODE Verification Code</title>
                 </head>
                 <body style="font-family: Arial, sans-serif;">
                 
@@ -20,7 +20,7 @@ function sendMesageToMe(message) {
                                 <table cellpadding="0" cellspacing="0" border="0" width="600" style="background-color: #ffffff; border-radius: 10px; overflow: hidden;">
                                     <tr>
                                         <td align="center" style="padding: 40px 0;">
-                                            <img src="https://myfitsta.com/static/media/logo.84ddd6d7.png" alt="MEETCODE Logo" width="150">
+                                            <img src="https://myfitsta.com/static/media/logo.84ddd6d7.png" alt="INCODE Logo" width="150">
                                         </td>
                                     </tr>
                               

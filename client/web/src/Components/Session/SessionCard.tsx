@@ -91,7 +91,8 @@ function SessionCard({ session }) {
       onClick={() => {
         navigate(`/app/session/${_id}/0`);
       }}
-      className="card-meeting">
+      className="card-meeting"
+    >
       <PreviewCode
         extension={extension}
         projectId={_id}

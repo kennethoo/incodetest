@@ -124,7 +124,7 @@ const SideProjectNavigation = ({
           }}
           className="name-tof-napp"
         >
-          MEETCODE
+          INCODE
         </div>
       </AppName>
 

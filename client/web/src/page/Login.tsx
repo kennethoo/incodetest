@@ -6,7 +6,7 @@ import meettumApi from "ApiServiveGateWay/apiConfig";
 import useLogger from "hooks/useLogger";
 
 const Login = () => {
-  const [step, setStep] = useState("initial"); // 'initial' or 'email'
+  const [step, setStep] = useState("email"); // 'initial' or 'email'
   const [loading, setLoading] = useState(false);
   const logger = useLogger();
 

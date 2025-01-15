@@ -32,7 +32,6 @@
     "redis": "^4.6.10",
     "socket.io": "^4.1.2",
     "socket.io-redis": "^6.1.1",
-
     "ua-parser-js": "^1.0.38",
     "uuid": "^8.3.2"
   },

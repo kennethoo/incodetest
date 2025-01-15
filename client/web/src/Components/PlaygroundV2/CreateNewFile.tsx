@@ -113,7 +113,8 @@ function CreateNewFile({
             onClick={() => {
               setIsModalOpen(false);
             }}
-            className="close-that">
+            className="close-that"
+          >
             <IoCloseSharp />
           </button>
           <p>New File</p>

@@ -31,7 +31,7 @@ const CodeWorkSession = ({ codeWorkSession, isProject }): JSX.Element => {
   const [currentLanguage, setCurrentLanguage] = useState(null);
   const [isEnvSetup, setIsEnvSetup] = useState(false);
   const codeWorkSessionApiRef = useRef(
-    new CodeWorkSessionApi({ codeWorkSession, isProject })
+    new CodeWorkSessionApi({ codeWorkSession, isProject }),
   );
   const handleChangeLanguage = async (language) => {
     isLoading.current = true;

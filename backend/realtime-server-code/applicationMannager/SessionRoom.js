@@ -28,7 +28,7 @@ async function removeUserSessionRoom({ sessionRoomId, id }) {
       $pull: {
         connectedUsers: { socketId: id },
       },
-    }
+    },
   );
   return data;
 }
@@ -43,7 +43,7 @@ async function removeSessionRoomFromUser({ id, sessionRoomId }) {
         sessionRoom: { sessionRoomId },
       },
     },
-    { new: true }
+    { new: true },
   );
 
   return data;
@@ -77,7 +77,7 @@ async function addUserToSessionRoom({
         },
       },
     },
-    { new: true }
+    { new: true },
   );
 
   return connectedUsers;
@@ -102,7 +102,7 @@ async function addRoomToUser({ userId, sessionRoomId }) {
       $push: {
         sessionRoom: conectedUser,
       },
-    }
+    },
   );
 
   return data;

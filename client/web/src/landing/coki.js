@@ -47,7 +47,7 @@ class Cookies extends Component {
             <li>
               <strong>Company</strong> (referred to as either &quot;the
               Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;
-              in this Cookies Policy) refers to MEETCODE LLC, 325 Chestnut St,
+              in this Cookies Policy) refers to INCODE LLC, 325 Chestnut St,
               Philadelphia, PA 19106.
             </li>
             <li>
@@ -57,7 +57,7 @@ class Cookies extends Component {
               its many uses.
             </li>
             <li>
-              <strong>Website</strong> refers to MEETCODE, accessible from{" "}
+              <strong>Website</strong> refers to INCODE, accessible from{" "}
               <a
                 href="https://meettum.com/"
                 rel="external nofollow noopener"

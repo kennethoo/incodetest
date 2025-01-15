@@ -17,6 +17,6 @@ let notificationbasic = new Schema({
 
 const NotificationBasic = mongoose.model(
   "notificationbasic",
-  notificationbasic
+  notificationbasic,
 );
 module.exports = NotificationBasic;

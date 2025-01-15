@@ -49,7 +49,7 @@ router.post(
   async function (req, res) {
     const data = await userWalletApi.loadWallet(req.body);
     res.send(data);
-  }
+  },
 );
 
 router.get("/api/v1/createkey", checkSession, async function (req, res) {

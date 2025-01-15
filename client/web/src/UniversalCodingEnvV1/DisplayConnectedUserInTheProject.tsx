@@ -22,7 +22,7 @@ function DisplayConnectedUserInTheProject({ id, codeWorkSession }) {
       projectId: id,
       userId: user.userId,
       username: user.username,
-    })
+    }),
   );
 
   const [allUserInSessionRoom, setAllUserInSessionRoom] = useState([]);
@@ -46,7 +46,7 @@ function DisplayConnectedUserInTheProject({ id, codeWorkSession }) {
       } else {
         setAllUserInSessionRoom((prev) => {
           const otherUserThanMe = [...prev].filter(
-            (connectedUser) => connectedUser.socketId !== id
+            (connectedUser) => connectedUser.socketId !== id,
           );
           return otherUserThanMe;
         });
@@ -54,7 +54,7 @@ function DisplayConnectedUserInTheProject({ id, codeWorkSession }) {
     };
     userPresent.current.server.on(
       "leaved:session:room",
-      handleUserDisconnected
+      handleUserDisconnected,
     );
     userPresent.current.joinRoom();
     return () => {

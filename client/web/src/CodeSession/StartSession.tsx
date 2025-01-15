@@ -61,7 +61,8 @@ function StartSession() {
   return (
     <Button
       style={{ backgroundColor: isLoading ? "transparent" : "#6f56e5" }}
-      onClick={startMeeting}>
+      onClick={startMeeting}
+    >
       {isLoading ? <LoadingSpin /> : "Start Session"}
     </Button>
   );

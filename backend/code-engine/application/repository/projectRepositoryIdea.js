@@ -89,7 +89,7 @@ class ProjectRepositoryIdeaApi {
     projectIdea.cloneCount++;
     const projectFiles = this.getDefaultProJectFile(
       language,
-      projectIdea.description
+      projectIdea.description,
     );
     const payloadProject = {
       userId,

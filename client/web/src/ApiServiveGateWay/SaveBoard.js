@@ -67,7 +67,7 @@ const darkTheme = EditorView.theme(
       backgroundColor: "transparent", // Active line gutter highlight
     },
   },
-  { dark: true } // Specify this is a dark theme
+  { dark: true }, // Specify this is a dark theme
 );
 
 const EXTENSION_TO_LANGUAGE = {

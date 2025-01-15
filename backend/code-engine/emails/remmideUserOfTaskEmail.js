@@ -68,7 +68,7 @@ function remmideUserOfTaskEmail({ email, username, title }) {
 <div className="logoBox">
         <img
             src="https://meettum.com/static/media/logo.152c221b7f080aea1d32.png"
-            alt="MEETCODE Logo"
+            alt="INCODE Logo"
             width="150"
           />
         </div>

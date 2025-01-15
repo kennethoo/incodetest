@@ -43,7 +43,7 @@ router.post("/api/book/paid/meetingsession/intent", async (req, res) => {
 
 router.post("/api/meettum/subscribe/intent", async (req, res) => {
   const result = await meetumCodeSubscriptionApi.createSubScriptionIntent(
-    req.body
+    req.body,
   );
   res.send(result);
 });
@@ -55,7 +55,7 @@ router.post("/api/meettum/subscribe/pro", async (req, res) => {
 
 router.get("/api/v1/payment/methode", checkSession, async (req, res) => {
   const result = await meetumCodeSubscriptionApi.getCustomerPaymentMethode(
-    req.session.user.userId
+    req.session.user.userId,
   );
   res.send(result);
 });
@@ -70,7 +70,7 @@ router.post(
     });
 
     res.send(result);
-  }
+  },
 );
 
 router.post(
@@ -82,7 +82,7 @@ router.post(
       userId: req.session?.user?.userId,
     });
     res.send(result);
-  }
+  },
 );
 
 export default router;

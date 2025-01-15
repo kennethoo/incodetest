@@ -105,61 +105,6 @@ function Setting() {
               </IconOption>
               <Link to={"/app/setting/edit"}>Edit Account</Link>
             </SettingOption>
-            <SettingOption
-              style={{ backgroundColor: id === "subscription" && "#6f56e5" }}
-            >
-              <IconOption>
-                <BsArrowRepeat />
-              </IconOption>
-              <Link to={"/app/setting/subscription"}>Manage Subscription</Link>
-            </SettingOption>
-            <SettingOption
-              style={{ backgroundColor: id === "paymentoption" && "#6f56e5" }}
-            >
-              <IconOption>
-                <MdPayment />
-              </IconOption>
-              <Link to={"/app/setting/paymentoption"}>Payment Method</Link>
-            </SettingOption>
-
-            <SettingOption
-              style={{ backgroundColor: id === "changePassword" && "#6f56e5" }}
-            >
-              <IconOption>
-                <RiLockPasswordFill />
-              </IconOption>
-              <Link to={"/app/setting/changePassword"}>Change Password</Link>
-            </SettingOption>
-
-            <SettingOption
-              style={{ backgroundColor: id === "loginActivity" && "#6f56e5" }}
-            >
-              <IconOption>
-                <SiGooglemaps />
-              </IconOption>
-              <Link to={"/app/setting/loginActivity"}>Login Activities</Link>
-            </SettingOption>
-
-            <SettingOption
-              style={{ backgroundColor: id === "mode" && "#6f56e5" }}
-            >
-              <IconOption>
-                <BsMoon />
-              </IconOption>
-              <Link to={"/app/setting/mode"}>Theme</Link>
-            </SettingOption>
-            <SettingOption
-              style={{ backgroundColor: id === "termsCondition" && "#6f56e5" }}
-            >
-              <IconOption>
-                <FaClipboardList />
-              </IconOption>
-              <Link to={"/app/setting/termsCondition"}>
-                Terms and Conditions
-              </Link>
-            </SettingOption>
-
-            <FeedBackButton />
 
             <SettingOption onClick={logout}>
               <IconOption>
@@ -167,7 +112,7 @@ function Setting() {
               </IconOption>
               Log out
             </SettingOption>
-            <DeleteAccount />
+           
           </div>
           <div
             className={`wrapr-thatj-tahbs ${id !== undefined ? "active" : ""}`}

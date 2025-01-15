@@ -33,7 +33,8 @@ function AvatarContainer({ users }) {
           }}
           max={3}
           renderSurplus={(surplus) => <span>+{surplus.toString()[0]}</span>}
-          total={users.length}>
+          total={users.length}
+        >
           {users.map((user) => {
             return (
               <AvatarUser

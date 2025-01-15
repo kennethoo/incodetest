@@ -125,8 +125,9 @@ const SideNavigation = ({
             fontWeight: "bold",
             fontSize: "20px",
           }}
-          className="name-tof-napp">
-          MEETCODE
+          className="name-tof-napp"
+        >
+          INCODE
         </div>
       </AppName>
 
@@ -168,7 +169,8 @@ const SideNavigation = ({
               key={file.filename}
               onClick={() => {
                 navigate(`${codeWorkSession.url}/${index}`);
-              }}>
+              }}
+            >
               <ExtensionDisplayer language={file.filename.split(".").pop()} />
               <FileTitle>{file.filename}</FileTitle>
               {!file.isEntryPoint && (

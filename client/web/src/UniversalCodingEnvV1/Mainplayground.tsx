@@ -167,7 +167,8 @@ const Mainplayground = ({
       <ApplicationContainer>
         <CodeWrapper
           ref={codeWrapperRef}
-          style={{ width: isOuputSectionOpen ? codeWrapperWidth : "100%" }}>
+          style={{ width: isOuputSectionOpen ? codeWrapperWidth : "100%" }}
+        >
           <CodeSanBoxV2
             isReadOnly={isReadOnly}
             setOuputSectionOpen={setOuputSectionOpen}

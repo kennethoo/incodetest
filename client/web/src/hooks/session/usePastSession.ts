@@ -10,7 +10,6 @@ export function usePastSession() {
   const [isLoading, setIsloading] = useState(true);
   const [pagination, setPagination] = useState({ limit: 10000000, skip: 0 });
   const [canFetch, setCanFetch] = useState(true);
-  
 
   const addSession = (value) => {
     dispatch({
@@ -32,22 +31,21 @@ export function usePastSession() {
   };
   const fetchData = async (pagination) => {
     const result = await getSession(pagination);
-    console.log(result)
-    const { sessions,succeeded } = result;
+    console.log(result);
+    const { sessions, succeeded } = result;
 
-    if(succeeded){
-   setPastSessionsResult([...sessions]);
-    }else{
-           setPastSessionsResult([]);
+    if (succeeded) {
+      setPastSessionsResult([...sessions]);
+    } else {
+      setPastSessionsResult([]);
     }
 
     setIsloading(false);
   };
 
   useEffect(() => {
-   fetchData(pagination);
+    fetchData(pagination);
   }, []);
-
 
   const refetch = async (limit, skip) => {
     setPagination({ limit, skip });

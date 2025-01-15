@@ -15,7 +15,7 @@ const Container = styled.div`
 function DowloadSection() {
   return (
     <Container id="download-section">
-      <p style={{ fontSize: "25px" }}>Download MEETCODE App</p>
+      <p style={{ fontSize: "25px" }}>Download INCODE App</p>
       <p style={{ marginTop: "10px" }}>
         Get the app for a better experience on your mobile device.
       </p>

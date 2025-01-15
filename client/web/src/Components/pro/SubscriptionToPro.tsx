@@ -52,7 +52,8 @@ function SubscriptionToPro() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.2 }}>
+            transition={{ duration: 0.2 }}
+          >
             <FeatureOfMeetumPro setSeletedStep={setSeletedStep} />
           </SectionContainer>
         );
@@ -64,16 +65,19 @@ function SubscriptionToPro() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -30 }}
-            transition={{ duration: 0.2 }}>
+            transition={{ duration: 0.2 }}
+          >
             <ContainerOptionsWraper>
               <div
                 style={{ marginBottom: "10px" }}
-                className="booking-session-tilte">
+                className="booking-session-tilte"
+              >
                 <button
                   onClick={() => {
                     setSeletedStep("step_one");
                   }}
-                  className="close-that">
+                  className="close-that"
+                >
                   <IoChevronBackOutline />
                 </button>
                 <p>Select a Plan</p>
@@ -99,7 +103,8 @@ function SubscriptionToPro() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -30 }}
-            transition={{ duration: 0.2 }}>
+            transition={{ duration: 0.2 }}
+          >
             <PaymentContainer
               seletectedPlanId={seletectedPlanId}
               setSeletedStep={setSeletedStep}
@@ -108,7 +113,7 @@ function SubscriptionToPro() {
         );
         break;
       default:
-        content = <div key="default">MEETCODE</div>;
+        content = <div key="default">INCODE</div>;
     }
 
     return content;

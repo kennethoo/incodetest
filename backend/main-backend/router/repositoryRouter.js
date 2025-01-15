@@ -11,7 +11,7 @@ router.post(
   async function (req, res) {
     const data = await apiGateWay.handleActionForRepository(req.body);
     res.send(data);
-  }
+  },
 );
 
 router.get(
@@ -20,7 +20,7 @@ router.get(
   async function (req, res) {
     const data = await apiGateWay.getRepository(JSON.parse(req.params.query));
     res.send(data);
-  }
+  },
 );
 
 export default router;

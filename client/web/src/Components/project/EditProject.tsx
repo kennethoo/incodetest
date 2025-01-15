@@ -71,7 +71,8 @@ function EditProject({
             onClick={() => {
               setIsModalOpen(false);
             }}
-            className="close-that">
+            className="close-that"
+          >
             <IoCloseSharp />
           </button>
           <p>Edit Project</p>

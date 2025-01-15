@@ -164,7 +164,8 @@ const Mainplayground = ({
       <DesktopMode>
         <CodeWrapper
           ref={codeWrapperRef}
-          style={{ width: isOuputSectionOpen ? codeWrapperWidth : "100%" }}>
+          style={{ width: isOuputSectionOpen ? codeWrapperWidth : "100%" }}
+        >
           <CodeSanBoxV2
             setOuputSectionOpen={setOuputSectionOpen}
             canUpdate={true}

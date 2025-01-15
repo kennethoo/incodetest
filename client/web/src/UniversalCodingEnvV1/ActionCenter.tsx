@@ -111,13 +111,15 @@ function ActionCenter({
       <ButtonContainer
         onClick={() => {
           setIscreateNewFileModalOpen(true);
-        }}>
+        }}
+      >
         <VscNewFile />
       </ButtonContainer>
       <ButtonContainer
         onClick={() => {
           setIsModalOpen(true);
-        }}>
+        }}
+      >
         <RiFileEditLine />
       </ButtonContainer>
       <ButtonContainer onClick={copyLink}>

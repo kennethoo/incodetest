@@ -53,7 +53,8 @@ function GoogleLoginAuth() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-      }}>
+      }}
+    >
       {/* Placeholder for the Google Sign-In button */}
       <div id="google-signin" style={{ marginBottom: "5px" }}></div>
       {errorMessage && <div style={{ color: "red" }}>{errorMessage}</div>}

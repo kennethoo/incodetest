@@ -29,8 +29,8 @@ function LandingPageTextAnimation() {
         <p className={`text-to-animatte ${islastClass}`}>Schedule Meeting</p>
         <p className={`text-to-animatte ${islastClass}`}>Join Meeting</p>
         <p className={`text-to-animatte ${islastClass}`}>UserPresentInRoom</p>
-        <p className={`text-to-animatte ${islastClass}`}>Meet On MEETCODE</p>
-        <p className={`text-to-animatte ${islastClass}`}>MEETCODE</p>
+        <p className={`text-to-animatte ${islastClass}`}>Meet On INCODE</p>
+        <p className={`text-to-animatte ${islastClass}`}>INCODE</p>
       </div>
     </div>
   );

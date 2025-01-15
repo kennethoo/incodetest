@@ -42,7 +42,7 @@ class CoadingboardMannager {
     // Use snapshot if it's more recent than updates
     if (snapshot) {
       const latestUpdateTimestamp = moment.utc(
-        allUpdates[allUpdates.length - 1].timestamp
+        allUpdates[allUpdates.length - 1].timestamp,
       );
 
       if (moment.utc(snapshot._doc.timestamp).isAfter(latestUpdateTimestamp)) {

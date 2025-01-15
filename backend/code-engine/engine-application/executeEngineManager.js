@@ -173,9 +173,9 @@ class ExecuteEngineManager {
 
             exec(
               `docker stop ${jobName} && docker rm ${jobName}`,
-              (errorKill, stdoutKill, stderrKill) => {}
+              (errorKill, stdoutKill, stderrKill) => {},
             );
-          }
+          },
         );
       });
     });
@@ -272,7 +272,7 @@ class ExecuteEngineManager {
             });
             resolve(result);
           }
-        }
+        },
       );
     });
   }

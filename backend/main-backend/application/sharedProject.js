@@ -35,7 +35,7 @@ class SharedProjectApi {
     const { _id } = payload;
     const result = await Project.findOneAndUpdate(
       { _id },
-      { ...payload, lastModified: moment.utc().format() }
+      { ...payload, lastModified: moment.utc().format() },
     );
     return result;
   };

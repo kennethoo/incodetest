@@ -180,11 +180,11 @@ class ExecuteEngineManagerV2 {
 
             exec(
               `docker stop ${jobName} && docker rm ${jobName}`,
-              (errorKill, stdoutKill, stderrKill) => {}
+              (errorKill, stdoutKill, stderrKill) => {},
             );
 
             fs.rm(folderPath, { recursive: true }, (err) => {});
-          }
+          },
         );
       });
     });
@@ -276,7 +276,7 @@ class ExecuteEngineManagerV2 {
             });
             resolve(result);
           }
-        }
+        },
       );
     });
   }

@@ -122,7 +122,7 @@ const SideNavigationForSession = ({
           }}
           className="name-tof-napp"
         >
-          MEETCODE
+          INCODE
         </div>
       </AppName>
 

@@ -79,7 +79,7 @@ function TopNavigation() {
           }}
           className="name-tof-napp"
         >
-          MEETCODE
+          INCODE
         </div>
       </AppName>
       <NavigationWrapper>
