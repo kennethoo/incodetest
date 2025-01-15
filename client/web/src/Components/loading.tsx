@@ -18,7 +18,7 @@ function Loading({ redirect = false }) {
   if (redirect) {
     if (currentStatus === userLoginEnum.notLogin) {
       setTimeout(() => {
-        navigate("/hello");
+        navigate("/login");
       }, 100);
     } else if (currentStatus === userLoginEnum.login) {
       setTimeout(() => {
