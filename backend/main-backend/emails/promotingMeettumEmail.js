@@ -4,14 +4,14 @@ function promotingMeettumEmail({ email, username }) {
   const msg = {
     to: email,
     from: "noreply@meettum.com",
-    subject: "Exciting News: Meetcode Just Got More Affordable!",
-    text: "Exciting News: Meetcode Just Got More Affordable!",
+    subject: "Exciting News: InCode Just Got More Affordable!",
+    text: "Exciting News: InCode Just Got More Affordable!",
     html: `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exciting News: Meetcode Just Got More Affordable!</title>
+    <title>Exciting News: InCode Just Got More Affordable!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -74,24 +74,24 @@ function promotingMeettumEmail({ email, username }) {
 <body>
     <div class="email-container">
         <div class="header">
-            <h1>Exciting News: Meetcode Just Got More Affordable!</h1>
+            <h1>Exciting News: InCode Just Got More Affordable!</h1>
         </div>
         <div class="content">
             <h2>Hi ${username},</h2>
-            <p>We’ve been listening to your feedback, and we’re thrilled to announce that we’re reducing the price of Meetcode to make it more accessible to everyone. Starting now, you can enjoy all the powerful features of Meetcode for just <strong>$15/month</strong>!</p>
+            <p>We’ve been listening to your feedback, and we’re thrilled to announce that we’re reducing the price of InCode to make it more accessible to everyone. Starting now, you can enjoy all the powerful features of InCode for just <strong>$15/month</strong>!</p>
             <p><strong>Here’s the updated pricing:</strong></p>
             <ul>
                 <li><strong>Monthly Plan:</strong> $15/month</li>
                 <li><strong>6-Month Plan:</strong> $75 (Save ~17%)</li>
                 <li><strong>Annual Plan:</strong> $140 (Save ~22%)</li>
             </ul>
-            <p>You’ll continue to have access to all the tools that make Meetcode a game-changer:</p>
+            <p>You’ll continue to have access to all the tools that make InCode a game-changer:</p>
             <ul>
                 <li>Real-time collaboration</li>
                 <li>Persistent code storage (paid plans only)</li>
                 <li>AI-powered coding assistance</li>
             </ul>
-            <p>We’re committed to helping you collaborate, code, and create with ease, and this price adjustment is part of our mission to make Meetcode accessible to everyone.</p>
+            <p>We’re committed to helping you collaborate, code, and create with ease, and this price adjustment is part of our mission to make InCode accessible to everyone.</p>
             <a href="https://code.meettum.com/app/join/pro" class="cta-button">Upgrade Now and Save</a>
         </div>
       

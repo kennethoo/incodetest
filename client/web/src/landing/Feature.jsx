@@ -115,7 +115,7 @@ const features = [
 const Feature = () => {
   return (
     <FeatureContainer id="feature">
-      <Title>Why Choose Meetcode?</Title>
+      <Title>Why Choose InCode?</Title>
       <CardWrapper>
         {features.map((feature, index) => (
           <Card key={index}>
