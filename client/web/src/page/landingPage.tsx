@@ -12,7 +12,7 @@ function LandingPage() {
       <Info />
       <div className="holsnjnfj-iofjf"></div>
       <div className="section-info-acti">
-      
+      <PreviewCodeDemo/>
       </div>
 
       <BoxCook />
